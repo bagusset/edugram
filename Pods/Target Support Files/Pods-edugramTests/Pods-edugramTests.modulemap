@@ -1,0 +1,6 @@
+framework module Pods_edugramTests {
+  umbrella header "Pods-edugramTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
