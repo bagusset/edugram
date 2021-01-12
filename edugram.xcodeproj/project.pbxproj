@@ -19,6 +19,9 @@
 		0F67FE6C25AD363800ED5F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F67FE6A25AD363800ED5F18 /* LaunchScreen.storyboard */; };
 		0F67FE7725AD363800ED5F18 /* edugramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE7625AD363800ED5F18 /* edugramTests.swift */; };
 		0F67FE8225AD363800ED5F18 /* edugramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE8125AD363800ED5F18 /* edugramUITests.swift */; };
+		2DE7EC26AA590EC4C92C5647 /* Pods_edugramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3627B6FF1AB6E345728F026C /* Pods_edugramTests.framework */; };
+		53BD3FAD89D3A7D5F7090514 /* Pods_edugram_edugramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45717F227BE3945136899DBD /* Pods_edugram_edugramUITests.framework */; };
+		AB2FF683C120B11E8F252411 /* Pods_edugram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D031EC5186155D92C140AE39 /* Pods_edugram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,15 @@
 		0F67FE7D25AD363800ED5F18 /* edugramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edugramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F67FE8125AD363800ED5F18 /* edugramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edugramUITests.swift; sourceTree = "<group>"; };
 		0F67FE8325AD363800ED5F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166CAD811E1CAFE5054FB926 /* Pods-edugram-edugramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugram-edugramUITests.release.xcconfig"; path = "Target Support Files/Pods-edugram-edugramUITests/Pods-edugram-edugramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		24A8C397303AF8D6A9AA8F34 /* Pods-edugram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugram.release.xcconfig"; path = "Target Support Files/Pods-edugram/Pods-edugram.release.xcconfig"; sourceTree = "<group>"; };
+		24A998B3AE66D60F9122DCA7 /* Pods-edugramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugramTests.release.xcconfig"; path = "Target Support Files/Pods-edugramTests/Pods-edugramTests.release.xcconfig"; sourceTree = "<group>"; };
+		2BFC9061E7FAF641EF776950 /* Pods-edugram-edugramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugram-edugramUITests.debug.xcconfig"; path = "Target Support Files/Pods-edugram-edugramUITests/Pods-edugram-edugramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3627B6FF1AB6E345728F026C /* Pods_edugramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edugramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45717F227BE3945136899DBD /* Pods_edugram_edugramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edugram_edugramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD81CAC01737853BA826E9E /* Pods-edugram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugram.debug.xcconfig"; path = "Target Support Files/Pods-edugram/Pods-edugram.debug.xcconfig"; sourceTree = "<group>"; };
+		C1DC95CB5D83C03E21C27488 /* Pods-edugramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugramTests.debug.xcconfig"; path = "Target Support Files/Pods-edugramTests/Pods-edugramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D031EC5186155D92C140AE39 /* Pods_edugram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edugram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB2FF683C120B11E8F252411 /* Pods_edugram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE7EC26AA590EC4C92C5647 /* Pods_edugramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BD3FAD89D3A7D5F7090514 /* Pods_edugram_edugramUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +104,8 @@
 				0F67FE7525AD363800ED5F18 /* edugramTests */,
 				0F67FE8025AD363800ED5F18 /* edugramUITests */,
 				0F67FE5A25AD363800ED5F18 /* Products */,
+				5B776BA57C1DC3F00BEF3A3F /* Pods */,
+				187E163916D0EFB59442E3B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,30 @@
 			path = edugramUITests;
 			sourceTree = "<group>";
 		};
+		187E163916D0EFB59442E3B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D031EC5186155D92C140AE39 /* Pods_edugram.framework */,
+				45717F227BE3945136899DBD /* Pods_edugram_edugramUITests.framework */,
+				3627B6FF1AB6E345728F026C /* Pods_edugramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B776BA57C1DC3F00BEF3A3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFD81CAC01737853BA826E9E /* Pods-edugram.debug.xcconfig */,
+				24A8C397303AF8D6A9AA8F34 /* Pods-edugram.release.xcconfig */,
+				2BFC9061E7FAF641EF776950 /* Pods-edugram-edugramUITests.debug.xcconfig */,
+				166CAD811E1CAFE5054FB926 /* Pods-edugram-edugramUITests.release.xcconfig */,
+				C1DC95CB5D83C03E21C27488 /* Pods-edugramTests.debug.xcconfig */,
+				24A998B3AE66D60F9122DCA7 /* Pods-edugramTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F67FE8625AD363800ED5F18 /* Build configuration list for PBXNativeTarget "edugram" */;
 			buildPhases = (
+				68C9B3C8A0D9C36AF90A4F1C /* [CP] Check Pods Manifest.lock */,
 				0F67FE5525AD363800ED5F18 /* Sources */,
 				0F67FE5625AD363800ED5F18 /* Frameworks */,
 				0F67FE5725AD363800ED5F18 /* Resources */,
+				05506AC984B42B2AFF139A2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F67FE8925AD363800ED5F18 /* Build configuration list for PBXNativeTarget "edugramTests" */;
 			buildPhases = (
+				15C04F2AF18CF9C0758C71B9 /* [CP] Check Pods Manifest.lock */,
 				0F67FE6E25AD363800ED5F18 /* Sources */,
 				0F67FE6F25AD363800ED5F18 /* Frameworks */,
 				0F67FE7025AD363800ED5F18 /* Resources */,
@@ -178,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F67FE8C25AD363800ED5F18 /* Build configuration list for PBXNativeTarget "edugramUITests" */;
 			buildPhases = (
+				A6401012713E96010F15F085 /* [CP] Check Pods Manifest.lock */,
 				0F67FE7925AD363800ED5F18 /* Sources */,
 				0F67FE7A25AD363800ED5F18 /* Frameworks */,
 				0F67FE7B25AD363800ED5F18 /* Resources */,
+				EAB844DC6D9022B89D07FE6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +309,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05506AC984B42B2AFF139A2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edugram/Pods-edugram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edugram/Pods-edugram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-edugram/Pods-edugram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15C04F2AF18CF9C0758C71B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edugramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68C9B3C8A0D9C36AF90A4F1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edugram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6401012713E96010F15F085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edugram-edugramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB844DC6D9022B89D07FE6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edugram-edugramUITests/Pods-edugram-edugramUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edugram-edugramUITests/Pods-edugram-edugramUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-edugram-edugramUITests/Pods-edugram-edugramUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F67FE5525AD363800ED5F18 /* Sources */ = {
@@ -445,6 +594,7 @@
 		};
 		0F67FE8725AD363800ED5F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD81CAC01737853BA826E9E /* Pods-edugram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +613,7 @@
 		};
 		0F67FE8825AD363800ED5F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A8C397303AF8D6A9AA8F34 /* Pods-edugram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +632,7 @@
 		};
 		0F67FE8A25AD363800ED5F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1DC95CB5D83C03E21C27488 /* Pods-edugramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +654,7 @@
 		};
 		0F67FE8B25AD363800ED5F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A998B3AE66D60F9122DCA7 /* Pods-edugramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +676,7 @@
 		};
 		0F67FE8D25AD363800ED5F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BFC9061E7FAF641EF776950 /* Pods-edugram-edugramUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +696,7 @@
 		};
 		0F67FE8E25AD363800ED5F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166CAD811E1CAFE5054FB926 /* Pods-edugram-edugramUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
