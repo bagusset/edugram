@@ -29,9 +29,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DQ-bW-LJV">
                                 <rect key="frame" x="183" y="515" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5K-d2-but"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="917-tj-2ck">
-                                <rect key="frame" x="185" y="447" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="917-tj-2ck">
+                                <rect key="frame" x="41" y="447" width="331" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,8 +53,8 @@
                             <constraint firstItem="bvp-QU-4SU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="YAk-Hh-4Fo"/>
                             <constraint firstItem="5DQ-bW-LJV" firstAttribute="top" secondItem="917-tj-2ck" secondAttribute="bottom" constant="47" id="bBs-WR-NnR"/>
                             <constraint firstItem="LNf-T4-QYk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="dYf-9t-HEG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="917-tj-2ck" secondAttribute="trailing" constant="187" id="e4p-sQ-LXH"/>
-                            <constraint firstItem="917-tj-2ck" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="rBK-0d-gMU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="917-tj-2ck" secondAttribute="trailing" constant="42" id="e4p-sQ-LXH"/>
+                            <constraint firstItem="917-tj-2ck" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="rBK-0d-gMU"/>
                         </constraints>
                     </view>
                     <connections>
