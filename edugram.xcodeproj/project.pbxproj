@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F39E4A925AD5C0C00C42623 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F39E4A825AD5C0C00C42623 /* GoogleService-Info-2.plist */; };
+		0F39E4AA25AD5C0C00C42623 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F39E4A825AD5C0C00C42623 /* GoogleService-Info-2.plist */; };
+		0F39E4AB25AD5C0C00C42623 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F39E4A825AD5C0C00C42623 /* GoogleService-Info-2.plist */; };
 		0F67FE5D25AD363800ED5F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */; };
 		0F67FE5F25AD363800ED5F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */; };
 		0F67FE6125AD363800ED5F18 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE6025AD363800ED5F18 /* LoginVC.swift */; };
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F39E4A825AD5C0C00C42623 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info-2.plist"; sourceTree = SOURCE_ROOT; };
 		0F67FE5925AD363800ED5F18 /* edugram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edugram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				0F67FE6A25AD363800ED5F18 /* LaunchScreen.storyboard */,
 				0F67FE6D25AD363800ED5F18 /* Info.plist */,
 				0F67FE6525AD363800ED5F18 /* edugram.xcdatamodeld */,
+				0F39E4A825AD5C0C00C42623 /* GoogleService-Info-2.plist */,
 			);
 			path = edugram;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			files = (
 				0F67FE6C25AD363800ED5F18 /* LaunchScreen.storyboard in Resources */,
 				0F67FE6925AD363800ED5F18 /* Assets.xcassets in Resources */,
+				0F39E4A925AD5C0C00C42623 /* GoogleService-Info-2.plist in Resources */,
 				0F67FE6425AD363800ED5F18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F39E4AA25AD5C0C00C42623 /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F39E4AB25AD5C0C00C42623 /* GoogleService-Info-2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
