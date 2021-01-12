@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="edugram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="edugram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +54,12 @@
                             <constraint firstItem="917-tj-2ck" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="185" id="rBK-0d-gMU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alertLabel" destination="917-tj-2ck" id="5Kk-9j-Cgh"/>
+                        <outlet property="inputEmail" destination="bvp-QU-4SU" id="yui-j7-zev"/>
+                        <outlet property="inputPass" destination="LNf-T4-QYk" id="n3A-Os-vWD"/>
+                        <outlet property="loginBtn" destination="5DQ-bW-LJV" id="kwT-m0-AUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

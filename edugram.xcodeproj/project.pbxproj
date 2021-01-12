@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F67FE5D25AD363800ED5F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */; };
 		0F67FE5F25AD363800ED5F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */; };
-		0F67FE6125AD363800ED5F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE6025AD363800ED5F18 /* ViewController.swift */; };
+		0F67FE6125AD363800ED5F18 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE6025AD363800ED5F18 /* LoginVC.swift */; };
 		0F67FE6425AD363800ED5F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F67FE6225AD363800ED5F18 /* Main.storyboard */; };
 		0F67FE6725AD363800ED5F18 /* edugram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE6525AD363800ED5F18 /* edugram.xcdatamodeld */; };
 		0F67FE6925AD363800ED5F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F67FE6825AD363800ED5F18 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		0F67FE5925AD363800ED5F18 /* edugram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edugram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F67FE6025AD363800ED5F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F67FE6025AD363800ED5F18 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0F67FE6325AD363800ED5F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F67FE6625AD363800ED5F18 /* edugram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = edugram.xcdatamodel; sourceTree = "<group>"; };
 		0F67FE6825AD363800ED5F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */,
 				0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */,
-				0F67FE6025AD363800ED5F18 /* ViewController.swift */,
+				0F67FE6025AD363800ED5F18 /* LoginVC.swift */,
 				0F67FE6225AD363800ED5F18 /* Main.storyboard */,
 				0F67FE6825AD363800ED5F18 /* Assets.xcassets */,
 				0F67FE6A25AD363800ED5F18 /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F67FE6125AD363800ED5F18 /* ViewController.swift in Sources */,
+				0F67FE6125AD363800ED5F18 /* LoginVC.swift in Sources */,
 				0F67FE6725AD363800ED5F18 /* edugram.xcdatamodeld in Sources */,
 				0F67FE5D25AD363800ED5F18 /* AppDelegate.swift in Sources */,
 				0F67FE5F25AD363800ED5F18 /* SceneDelegate.swift in Sources */,
