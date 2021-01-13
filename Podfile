@@ -13,6 +13,8 @@ target 'edugram' do
   end
 	
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   target 'edugramUITests' do
     # Pods for testing

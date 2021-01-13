@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LoginVC: UIViewController {
-
+    
     @IBOutlet weak var inputEmail: UITextField!
     @IBOutlet weak var inputPass: UITextField!
     @IBOutlet weak var alertLabel: UILabel!
@@ -21,15 +23,17 @@ class LoginVC: UIViewController {
         configureButton()
     }
     
-    @IBAction func loginTab(_ sender: Any) {
-        if inputEmail.text == "Bagus" && inputPass.text == "1234"{
-            alertLabel.text = "Berhasil"
-            alertLabel.isHidden = false
-        } else {
-            alertLabel.isHidden = false
-            alertLabel.text = "Gagal"
-            alertLabel.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0, alpha: 1)
+    @IBAction func loginPress(_ sender: UIButton) {
+        if let email = inputEmail.text, let password = inputPass.text {
+            Auth.auth().signIn(withEmail: email, password: password) {[weak self] authResult, error in
+                if let e = error {
+                    print(e)
+                } else {
+                    self?.performSegue(withIdentifier: "loginSegue", sender: self)
+                }
+            }
         }
+        
     }
     
     func configureButton(){
@@ -37,9 +41,5 @@ class LoginVC: UIViewController {
         loginBtn.layer.cornerRadius = 10
         loginBtn.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
+    
 }
-
-
-
-
-
