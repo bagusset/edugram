@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F15DF4F25AE851E00A06884 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F15DF4E25AE851E00A06884 /* GoogleService-Info.plist */; };
+		0F15DF5725AE97EC00A06884 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F15DF5625AE97EC00A06884 /* RegisterVC.swift */; };
 		0F67FE5D25AD363800ED5F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */; };
 		0F67FE5F25AD363800ED5F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */; };
 		0F67FE6125AD363800ED5F18 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE6025AD363800ED5F18 /* LoginVC.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0F15DF4E25AE851E00A06884 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F15DF5625AE97EC00A06884 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		0F67FE5925AD363800ED5F18 /* edugram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edugram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				0F67FE5C25AD363800ED5F18 /* AppDelegate.swift */,
 				0F67FE5E25AD363800ED5F18 /* SceneDelegate.swift */,
 				0F67FE6025AD363800ED5F18 /* LoginVC.swift */,
+				0F15DF5625AE97EC00A06884 /* RegisterVC.swift */,
 				0F67FE6225AD363800ED5F18 /* Main.storyboard */,
 				0F67FE6825AD363800ED5F18 /* Assets.xcassets */,
 				0F67FE6A25AD363800ED5F18 /* LaunchScreen.storyboard */,
@@ -417,6 +420,7 @@
 				0F67FE6725AD363800ED5F18 /* edugram.xcdatamodeld in Sources */,
 				0F67FE5D25AD363800ED5F18 /* AppDelegate.swift in Sources */,
 				0F67FE5F25AD363800ED5F18 /* SceneDelegate.swift in Sources */,
+				0F15DF5725AE97EC00A06884 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
