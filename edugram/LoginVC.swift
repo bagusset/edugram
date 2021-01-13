@@ -23,13 +23,19 @@ class LoginVC: UIViewController {
         configureButton()
     }
     
+    
     @IBAction func loginPress(_ sender: UIButton) {
         if let email = inputEmail.text, let password = inputPass.text {
             Auth.auth().signIn(withEmail: email, password: password) {[weak self] authResult, error in
-                if let e = error {
-                    print(e)
+                if error != nil {
+                    let alert2 = UIAlertController(title: "Input Invalid", message: "Do you want register ?", preferredStyle: .alert)
+                    alert2.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                    alert2.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+                    self?.present(alert2, animated: true)
                 } else {
-                    self?.performSegue(withIdentifier: "loginSegue", sender: self)
+                    let alert1 = UIAlertController(title: "Berhasil", message: "Login Berhasil", preferredStyle: .alert)
+                    alert1.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                    self?.present(alert1, animated: true)
                 }
             }
         }
