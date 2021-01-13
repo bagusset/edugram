@@ -59,7 +59,7 @@
                                 <rect key="frame" x="179" y="603" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="LWJ-ax-hBM" kind="show" id="E2z-5s-4Mj"/>
+                                    <segue destination="LWJ-ax-hBM" kind="show" identifier="segueToRegister" id="E2z-5s-4Mj"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -29,7 +29,9 @@ class LoginVC: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password) {[weak self] authResult, error in
                 if error != nil {
                     let alert2 = UIAlertController(title: "Input Invalid", message: "Do you want register ?", preferredStyle: .alert)
-                    alert2.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                    alert2.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (UIAlertAction) -> Void in
+                        self?.performSegue(withIdentifier: "segueToRegister", sender: self)
+                    }))
                     alert2.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
                     self?.present(alert2, animated: true)
                 } else {

@@ -15,10 +15,10 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var regPassword: UITextField!
     @IBOutlet weak var signInBtn: UIButton!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     
@@ -28,6 +28,7 @@ class RegisterVC: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if error != nil{
                     let alert2 = UIAlertController(title: "Input Invalid", message: "Please input again", preferredStyle: .alert)
+                    alert2.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
                     self.present(alert2, animated: true)
                 } else {
                     self.navigationController?.popToRootViewController(animated: true)
@@ -37,6 +38,6 @@ class RegisterVC: UIViewController {
         
     }
     
-
-
+    
+    
 }
