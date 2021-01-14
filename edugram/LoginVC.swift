@@ -35,9 +35,7 @@ class LoginVC: UIViewController {
                     alert2.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
                     self?.present(alert2, animated: true)
                 } else {
-                    let alert1 = UIAlertController(title: "Berhasil", message: "Login Berhasil", preferredStyle: .alert)
-                    alert1.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
-                    self?.present(alert1, animated: true)
+                    self?.performSegue(withIdentifier: "segueToHomebase", sender: self)
                 }
             }
         }
