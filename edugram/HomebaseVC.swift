@@ -8,37 +8,27 @@
 import UIKit
 import FirebaseStorage
 import FirebaseDatabase
+import SDWebImage
 
 class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-        
+    
     @IBOutlet weak var postListCollectionView: UICollectionView!
-   
-    //var customImageFlowLayout : CustomImageViewFlowLayout!
-    var imageStorage = [UIImage]()
+    
+    var imageStorage = [imageModel]()
+    
+    //connect to DB
+    var dbRef : DatabaseReference!
     
     private let storage = Storage.storage().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadImages()
         
         
-        guard let urlString = UserDefaults.standard.value(forKey: "url") as? String,
-        let url = URL(string: urlString) else {
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url, completionHandler: { data, _, error in
-            guard let data = data, error == nil else {
-                return
-            }
-            
-            let image = UIImage(data: data)
-            
-            
-        })
+        dbRef = Database.database().reference().child("images")
+        loadDB()
     }
-   
+    
     @IBAction func postPressBtn() {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
@@ -49,46 +39,56 @@ class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         picker.dismiss(animated: true, completion: nil)
-        
         guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
             return
         }
         
-        guard let imageData = image.pngData() else {
+        guard let imageData = image.jpegData(compressionQuality: 8.0) else {
             return
         }
         
-       storage.child("images/file.png").putData(imageData,
-                                                metadata: nil,
-                                                completion: { _, error in
-                                                guard error == nil else {
+        storage.child("images").putData(imageData,
+                                        metadata: nil,
+                                        completion: { _, error in
+                                            guard error == nil else {
                                                 print("Failed to uplod")
                                                 return
-                                                }
-                                                            
-                                                self.storage.child("images/file.png").downloadURL(completion: { url, error in
-                                                    guard let url = url, error == nil else {
+                                            }
+                                            
+                                            self.storage.child("images").downloadURL(completion: { url, error in
+                                                guard let url = url, error == nil else {
                                                     return
-                                                    }
-                                                                
-                                                    let urlString = url.absoluteString
-                                                    print("Download URL : \(urlString)")
-                                                    UserDefaults.standard.setValue(urlString, forKey: "url")
-                                                            })
-                                                        })
-        
+                                                }
+                                                
+                                                let urlString = url.absoluteString
+                                                let key = self.dbRef.childByAutoId().key
+                                                let image = ["url": urlString]
+                                                
+                                                let childUpdate = ["/\(String(describing: key))": image]
+                                                self.dbRef.updateChildValues(childUpdate)
+                                            })
+                                        }
+        )
     }
-
-   
+    
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
         picker.dismiss(animated: true, completion: nil)
         
     }
     
-    func loadImages(){
-        imageStorage.append(UIImage(named: "image1")!)
-        imageStorage.append(UIImage(named: "image1")!)
-        self.postListCollectionView.reloadData()
+    func loadDB(){
+        dbRef.observe(DataEventType.value, with: { (snapshot) in
+            var newImage = [imageModel]()
+            
+            for ImageModelSnapshot in snapshot.children {
+                let modelObject = imageModel(snapshot: ImageModelSnapshot as! DataSnapshot)
+                newImage.append(modelObject)
+            }
+            
+            self.imageStorage = newImage
+            self.postListCollectionView.reloadData()
+        })
     }
     
 }
@@ -103,7 +103,7 @@ extension HomebaseVC : UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = postListCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomebaseCollectionViewCell
         
         let image = imageStorage[indexPath.row]
-        cell.postImage.image = image;
+        cell.postImage.sd_setImage(with: URL(string: image.url), placeholderImage: UIImage(named: "images1"))
         return cell
     }
     
