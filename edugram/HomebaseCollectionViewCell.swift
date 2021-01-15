@@ -12,5 +12,8 @@ class HomebaseCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postText: UILabel!
     
-    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.postImage.image = nil
+    }
 }

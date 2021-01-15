@@ -7,17 +7,34 @@
 
 import UIKit
 import FirebaseStorage
+import FirebaseDatabase
 
 class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
         
     @IBOutlet weak var postListCollectionView: UICollectionView!
     
+    var imageStorage = [UIImage]()
+    
     private let storage = Storage.storage().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
+        loadImages()
+        
+        guard let urlString = UserDefaults.standard.value(forKey: "url") as? String,
+        let url = URL(string: urlString) else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url, completionHandler: { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            let image = UIImage(data: data)
+            
+            
+        })
     }
    
     @IBAction func postPressBtn() {
@@ -58,7 +75,6 @@ class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
                                                             })
                                                         })
         
-        
     }
 
    
@@ -67,5 +83,27 @@ class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
         
     }
     
+    func loadImages(){
+        imageStorage.append(UIImage(named: "image1")!)
+        imageStorage.append(UIImage(named: "image1")!)
+        self.postListCollectionView.reloadData()
+    }
+    
+}
 
+extension HomebaseVC : UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageStorage.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = postListCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HomebaseCollectionViewCell
+        
+        let image = imageStorage[indexPath.row]
+        cell.postImage.image = image;
+        return cell
+    }
+    
+    
 }
