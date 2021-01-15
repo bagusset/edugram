@@ -18,6 +18,8 @@ target 'edugram' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
 
+  pod 'SDWebImage', '~> 5.0'
+
   target 'edugramUITests' do
     # Pods for testing
   end
