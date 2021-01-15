@@ -12,7 +12,8 @@ import FirebaseDatabase
 class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
         
     @IBOutlet weak var postListCollectionView: UICollectionView!
-    
+   
+    //var customImageFlowLayout : CustomImageViewFlowLayout!
     var imageStorage = [UIImage]()
     
     private let storage = Storage.storage().reference()
@@ -20,6 +21,7 @@ class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
     override func viewDidLoad() {
         super.viewDidLoad()
         loadImages()
+        
         
         guard let urlString = UserDefaults.standard.value(forKey: "url") as? String,
         let url = URL(string: urlString) else {
