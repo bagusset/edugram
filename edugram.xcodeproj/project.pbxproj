@@ -20,6 +20,7 @@
 		0F67FE8225AD363800ED5F18 /* edugramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67FE8125AD363800ED5F18 /* edugramUITests.swift */; };
 		0FD0F3FE25AFE01D00B81C0E /* HomebaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0F3FD25AFE01D00B81C0E /* HomebaseVC.swift */; };
 		0FD0F40625AFE13400B81C0E /* HomebaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD0F40525AFE13400B81C0E /* HomebaseCollectionViewCell.swift */; };
+		0FEEFE7425B1319F00972781 /* CustomImageViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEFE7325B1319F00972781 /* CustomImageViewFlowLayout.swift */; };
 		2DE7EC26AA590EC4C92C5647 /* Pods_edugramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3627B6FF1AB6E345728F026C /* Pods_edugramTests.framework */; };
 		53BD3FAD89D3A7D5F7090514 /* Pods_edugram_edugramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45717F227BE3945136899DBD /* Pods_edugram_edugramUITests.framework */; };
 		AB2FF683C120B11E8F252411 /* Pods_edugram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D031EC5186155D92C140AE39 /* Pods_edugram.framework */; };
@@ -62,6 +63,7 @@
 		0F67FE8325AD363800ED5F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FD0F3FD25AFE01D00B81C0E /* HomebaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebaseVC.swift; sourceTree = "<group>"; };
 		0FD0F40525AFE13400B81C0E /* HomebaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		0FEEFE7325B1319F00972781 /* CustomImageViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageViewFlowLayout.swift; sourceTree = "<group>"; };
 		166CAD811E1CAFE5054FB926 /* Pods-edugram-edugramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugram-edugramUITests.release.xcconfig"; path = "Target Support Files/Pods-edugram-edugramUITests/Pods-edugram-edugramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		24A8C397303AF8D6A9AA8F34 /* Pods-edugram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugram.release.xcconfig"; path = "Target Support Files/Pods-edugram/Pods-edugram.release.xcconfig"; sourceTree = "<group>"; };
 		24A998B3AE66D60F9122DCA7 /* Pods-edugramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edugramTests.release.xcconfig"; path = "Target Support Files/Pods-edugramTests/Pods-edugramTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				0F67FE6025AD363800ED5F18 /* LoginVC.swift */,
 				0F15DF5625AE97EC00A06884 /* RegisterVC.swift */,
 				0FD0F3FD25AFE01D00B81C0E /* HomebaseVC.swift */,
+				0FEEFE7325B1319F00972781 /* CustomImageViewFlowLayout.swift */,
 				0FD0F40525AFE13400B81C0E /* HomebaseCollectionViewCell.swift */,
 				0F67FE6225AD363800ED5F18 /* Main.storyboard */,
 				0F67FE6825AD363800ED5F18 /* Assets.xcassets */,
@@ -423,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD0F3FE25AFE01D00B81C0E /* HomebaseVC.swift in Sources */,
+				0FEEFE7425B1319F00972781 /* CustomImageViewFlowLayout.swift in Sources */,
 				0F67FE6125AD363800ED5F18 /* LoginVC.swift in Sources */,
 				0F67FE6725AD363800ED5F18 /* edugram.xcdatamodeld in Sources */,
 				0F67FE5D25AD363800ED5F18 /* AppDelegate.swift in Sources */,
