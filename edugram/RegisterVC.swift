@@ -18,8 +18,7 @@ class RegisterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        configureBtn()
     }
     
     
@@ -36,6 +35,12 @@ class RegisterVC: UIViewController {
             }
         }
         
+    }
+    
+    func configureBtn(){
+        signInBtn.backgroundColor = #colorLiteral(red: 0, green: 0.665512979, blue: 1, alpha: 1)
+        signInBtn.layer.cornerRadius = 10
+        signInBtn.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
     

@@ -137,13 +137,13 @@
 				0FD0F3FD25AFE01D00B81C0E /* HomebaseVC.swift */,
 				0FEEFE7325B1319F00972781 /* CustomImageViewFlowLayout.swift */,
 				0FD0F40525AFE13400B81C0E /* HomebaseCollectionViewCell.swift */,
+				0FEEFE7825B1370D00972781 /* imageModel.swift */,
 				0F67FE6225AD363800ED5F18 /* Main.storyboard */,
 				0F67FE6825AD363800ED5F18 /* Assets.xcassets */,
 				0F67FE6A25AD363800ED5F18 /* LaunchScreen.storyboard */,
 				0F67FE6D25AD363800ED5F18 /* Info.plist */,
 				0F15DF4E25AE851E00A06884 /* GoogleService-Info.plist */,
 				0F67FE6525AD363800ED5F18 /* edugram.xcdatamodeld */,
-				0FEEFE7825B1370D00972781 /* imageModel.swift */,
 			);
 			path = edugram;
 			sourceTree = "<group>";

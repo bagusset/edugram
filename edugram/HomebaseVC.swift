@@ -23,8 +23,6 @@ class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         dbRef = Database.database().reference().child("images")
         loadDB()
     }
@@ -85,7 +83,6 @@ class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
                 let modelObject = imageModel(snapshot: ImageModelSnapshot as! DataSnapshot)
                 newImage.append(modelObject)
             }
-            
             self.imageStorage = newImage
             self.postListCollectionView.reloadData()
         })

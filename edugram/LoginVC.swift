@@ -15,6 +15,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var inputPass: UITextField!
     @IBOutlet weak var alertLabel: UILabel!
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var signInUpBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,9 @@ class LoginVC: UIViewController {
         loginBtn.backgroundColor = #colorLiteral(red: 0, green: 0.665512979, blue: 1, alpha: 1)
         loginBtn.layer.cornerRadius = 10
         loginBtn.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        signInUpBtn.backgroundColor = #colorLiteral(red: 0, green: 0.665512979, blue: 1, alpha: 1)
+        signInUpBtn.layer.cornerRadius = 10
+        signInUpBtn.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
 }
