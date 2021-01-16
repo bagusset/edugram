@@ -25,6 +25,7 @@ class HomebaseVC: UIViewController, UIImagePickerControllerDelegate & UINavigati
         super.viewDidLoad()
         dbRef = Database.database().reference().child("images")
         loadDB()
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     @IBAction func postPressBtn() {
